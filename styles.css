@@ -1,6 +1,7 @@
+/* General Body Styling */
 body {
   font-family: 'Orbitron', sans-serif;
-  background: linear-gradient(to bottom, #000000, #1a1a1a, #333333); /* Deep black gradient */
+  background: linear-gradient(to bottom, #222200, #444400, #666600); /* Deep Yellow Gradient */
   margin: 0;
   padding: 0;
   display: flex;
@@ -10,47 +11,72 @@ body {
   color: #ffd700; /* Gold text */
 }
 
+/* Main Container */
 .container {
-  background: rgba(20, 20, 20, 0.9); /* Dark glass effect */
+  background: rgba(40, 40, 0, 0.9); /* Dark yellowish glass effect */
   backdrop-filter: blur(15px);
   border-radius: 15px;
   padding: 2rem;
   width: 90%;
   max-width: 450px;
-  box-shadow: 0 10px 40px rgba(255, 215, 0, 0.4);
+  box-shadow: 0 10px 40px rgba(255, 215, 0, 0.5);
   text-align: center;
   border: 2px solid rgba(255, 215, 0, 0.3);
 }
 
+/* Heading Styling */
 h1 {
   font-size: 2.8rem;
   margin-bottom: 1.2rem;
   color: #ffd700;
-  text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
 }
 
-/* Search Box */
-.search {
-  display: flex;
-  margin-bottom: 2rem;
-}
-
+/* Input Box */
 input {
-  flex: 1;
+  width: 80%;
   padding: 1rem;
   border: none;
-  border-radius: 25px 0 0 25px;
+  border-radius: 25px;
   background: rgba(255, 215, 0, 0.1);
   color: #ffd700;
   font-size: 1rem;
   outline: none;
   border: 1px solid rgba(255, 215, 0, 0.4);
+  text-align: center;
 }
 
 input::placeholder {
   color: rgba(255, 215, 0, 0.6);
 }
 
-/* Button */
+/* Futuristic Button */
 button {
-  padding: 1rem
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 25px;
+  background: #ffd700;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+}
+
+button:hover {
+  background: #ffcc00;
+  box-shadow: 0 0 25px rgba(255, 215, 0, 1);
+}
+
+button:active {
+  background: #e6b800;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+/* Neon Glow Effects */
+.glow-text {
+  font-size: 1.5rem;
+  color: #ffd700;
+  text-shadow: 0 0 10px #ffea00, 0 0 20px #ffd700, 0 0 30px #ffcc00;
+}
